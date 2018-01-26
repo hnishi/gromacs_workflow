@@ -4,3 +4,12 @@ Edit follwing files
   - edit restraint if you use it
 - posre.itp etc.
   - prepare files for restraint to be included in prm.top
+
+Reaction coordinate:
+COM-COM pulling
+* COM: Center of mass
+
+select two groups that will be calculated for COM-COM pulling
+in MD1_PULL.mdp and give the index.ndx file to grompp.
+
+
