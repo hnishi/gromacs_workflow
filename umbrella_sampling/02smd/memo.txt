@@ -1,0 +1,6 @@
+Edit follwing files
+
+- prm.top
+  - edit restraint if you use it
+- posre.itp etc.
+  - prepare files for restraint to be included in prm.top
