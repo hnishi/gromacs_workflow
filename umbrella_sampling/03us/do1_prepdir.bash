@@ -3,14 +3,15 @@
 temp_list="conf.list"
 cdir=$(pwd)
 
-pre_dir="../93ar_test"
+pre_dir="../02smd"
 #tdir=${cdir}/md1_test
 #tdir=${cdir}/md2_test
-tdir=${cdir}/md1
+tdir=${cdir}/eq1
 
 mkdir -p $tdir
 #template=MD_TEST.mdp.template
-template=US1_template.mdp
+#template=US1_template.mdp
+template=EQ1_template.mdp
 
 i=1
 for temp in $(cat $temp_list | cut -f 1 -d " ");
