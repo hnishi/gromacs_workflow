@@ -1,0 +1,8 @@
+#g_sgangle_mpi -f min2.gro -s min2.tpr -n index_axrst.ndx -z -oa sg_angle_sele1.xvg <<< a_2692_4493 
+#g_sgangle_mpi -f min2.gro -s min2.tpr -n index_axrst.ndx -z -oa sg_angle_sele2.xvg <<< a_3303_3905
+#g_sgangle_mpi -f min2.gro -s min2.tpr -n index_axrst.ndx -z -oa sg_angle_sele3.xvg <<< a_2692_3303 
+#g_sgangle_mpi -f min2.gro -s min2.tpr -n index_axrst.ndx -z -oa sg_angle_sele4.xvg <<< a_3905_4493
+
+g_sgangle_mpi -f min2.gro -s min2.tpr -n index_axrst.ndx -z -oa sg_angle_sele5.xvg <<< sele5       
+g_sgangle_mpi -f min2.gro -s min2.tpr -n index_axrst.ndx -z -oa sg_angle_sele6.xvg <<< sele6
+
