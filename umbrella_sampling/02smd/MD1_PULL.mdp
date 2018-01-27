@@ -7,14 +7,14 @@ tinit       = 0
 nsteps      = 700000    ; 1400 ps
 nstcomm     = 10
 ; Output parameters
-nstxout     = 5000      ; every 10 ps
+nstxout     = 0 ;5000      ; every 10 ps
 nstvout     = 5000 
 nstfout     = 500
 nstxtcout   = 1000       ; every 1 ps
 nstenergy   = 500
 ; Bond parameters
 constraint_algorithm    = lincs
-constraints             = all-bonds
+constraints             = h-bonds ;all-bonds
 continuation            = yes       ; continuing from NPT 
 ; Single-range cutoff scheme
 nstlist     = 5
@@ -32,7 +32,7 @@ pme_order       = 4
 ewald_rtol      = 1e-5
 optimize_fft    = yes
 ; Berendsen temperature coupling is on in two groups
-Tcoupl      = Nose-Hoover
+Tcoupl      = v-rescale ;Nose-Hoover
 tc_grps     = System ;non-protein  ;Protein   Non-Protein 
 tau_t       = 0.5   ;   0.5
 ref_t       = 300   ;300  ;   310
