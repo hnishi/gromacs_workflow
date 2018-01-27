@@ -1,0 +1,11 @@
+; position restraints for r_1-76_&_P of Protein in water t=   0.00000
+
+[ angle_restraints_z ]
+;   i      j      type    theta0    ForceConstant    multiplicity 
+    2692   2724   1       135.757   1000             1
+    3905   3935   1       147.448   1000             1
+    ;2692   4493   1       62.7233   1000             1
+    ;3303   3905   1       94.8022   1000             1
+    ;2692   3303   1       86.9754   1000             1
+    ;3905   4493   1       83.6852   1000             1
+    
