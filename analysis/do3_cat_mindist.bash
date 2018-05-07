@@ -2,7 +2,7 @@
 
 NAME=do3_cat_mindist.bash
 
-dn_inp1=./
+dn_inp1=.
 fn_out1=out_do3_mindist.txt
 
 v_str1=""
