@@ -10,8 +10,8 @@
 fn_fig1="pic_pmfnishi.png"
 
 Graph_title=""
-X_label="Length of N-terminal helix"
-Y_label="Length of C-terminal helix"
+X_label="Angle"
+Y_label="# "
 FONTSIZE=30
 
 #Graph_x_low=0
@@ -20,15 +20,15 @@ FONTSIZE=30
 #Graph_y_high=2.2
 
 ## number of bins of each axis
-nbin_x=28
-nbin_y=26 #28 
+nbin_x=19
+nbin_y=16 #28 
 
 ## bin width of each axis
-bw_x=1.0 
+bw_x=10 
 bw_y=1
 
 ## minimum value of bins
-min_x=0
+min_x=-180
 #max_x=28.0
 min_y=0 
 #max_y=2.0
@@ -77,11 +77,13 @@ bottom = -1*Gas_const/1000.0/J_per_cal*Temperature*math.log(np.amax(z)/float(len
 for i in range(nbin_y):
   for j in range(nbin_x):
     z[i][j]=-1*Gas_const/1000.0/J_per_cal*Temperature*math.log(z[i][j]/float(len(x)) ) -bottom if z[i][j]>0 else -1
+    #z[i][j]=z[i][j]/float(len(x)) 
+    #z[i][j]=z[i][j] 
 
 
 ### ****** Output matrix data
 for j in range(nbin_x):
-  if j%10 == 0:
+  if j%3 == 0: # tics (intervals) of x-labels
     print ",",min_x+j*bin_x,
   else:
     print ",",
@@ -135,7 +137,7 @@ xtics_label, ytics_label = [], []
 for i in range(nbin_x):
   #xtics_label.append(0+i*bin_x) 
   #xtics_label.append(0+i*5) 
-  xtics_label.append("%i" % (min_x+i*5.0*bin_x))
+  xtics_label.append("%i" % (min_x+i*5.0*bin_x)) 
 for i in range(nbin_y):
   #xtics_label.append('') 
   #ytics_label.append(min_y+i*bin_y)
